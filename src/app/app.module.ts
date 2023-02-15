@@ -9,6 +9,7 @@ import { EntriesComponent } from './entries/entries.component';
 import { ListingComponent } from './listing/listing.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ButtonComponent } from './button/button.component';
+import { TaskComponent } from './task/task.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ButtonComponent } from './button/button.component';
     EntriesComponent,
     ListingComponent,
     ButtonComponent,
+    TaskComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
