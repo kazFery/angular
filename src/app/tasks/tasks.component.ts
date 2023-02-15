@@ -4,9 +4,9 @@ import { TASKS } from '../mock.tasks';
 
 @Component({
   selector: 'app-task',
-  templateUrl: './task.component.html',
-  styleUrls: ['./task.component.css'],
+  templateUrl: './tasks.component.html',
+  styleUrls: ['./tasks.component.css'],
 })
-export class TaskComponent {
+export class TasksComponent {
   tasks: Task[] = TASKS;
 }

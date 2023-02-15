@@ -9,7 +9,8 @@ import { EntriesComponent } from './entries/entries.component';
 import { ListingComponent } from './listing/listing.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ButtonComponent } from './button/button.component';
-import { TaskComponent } from './task/task.component';
+import { TasksComponent } from './tasks/tasks.component';
+import { TaskItemComponent } from './task-item/task-item.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { TaskComponent } from './task/task.component';
     EntriesComponent,
     ListingComponent,
     ButtonComponent,
-    TaskComponent,
+    TasksComponent,
+    TaskItemComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
