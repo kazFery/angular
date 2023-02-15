@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { EntriesComponent } from './entries/entries.component';
 import { ListingComponent } from './listing/listing.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ButtonComponent } from './button/button.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { AppRoutingModule } from './app-routing.module';
     HeaderComponent,
     EntriesComponent,
     ListingComponent,
+    ButtonComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
