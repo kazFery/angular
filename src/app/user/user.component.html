@@ -1,0 +1,40 @@
+<div class="container">
+  <h1 [hidden]="userName === ''">Welcome {{ userName }}</h1>
+  <h1 [hidden]="userName !== ''">Please enter your user name</h1>
+  <div class="form-login">
+    <h2 class="text-center mb-4">Login</h2>
+    <div class="form-group">
+      <label for="userName">User Name:</label>
+      <input
+        type="text"
+        class="form-control"
+        id="userName"
+        [(ngModel)]="userName"
+      />
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        class="form-control"
+        id="password"
+        placeholder="Enter password"
+        (input)="onChangePassword($event)"
+      />
+    </div>
+    <div class="form-group">
+      <label for="retypePassword">Password:</label>
+      <input
+        type="password"
+        class="form-control"
+        id="password"
+        placeholder="Retype password"
+        (input)="OnChangeRepeatedPassword($event)"
+      />
+    </div>
+    <div>
+      <p [hidden]="isPasswordMatch || password == ''">Passwords do not match</p>
+      <p [hidden]="!isPasswordMatch">Passwords match!!!</p>
+    </div>
+  </div>
+</div>
